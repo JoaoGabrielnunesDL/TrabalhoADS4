@@ -4,7 +4,7 @@ Página de cadastro de livro desenvolvida para a atividade prática de
 HTML, CSS e JavaScript.
 
 ## Estrutura do projeto
-
+```
 projeto/
 ├── index.html
 ├── css/
@@ -14,7 +14,7 @@ projeto/
 ├── js/
 │   └── script.js
 └── README.md
-
+```
 ## Respostas
 
 **1. Qual é o papel de um servidor Web ao carregar esta página?**
@@ -28,6 +28,7 @@ página completa.
 **2. Caminho relativo a partir de paginas/sobre.html até imagens/capa-livro.png**
 
 O caminho correto seria:
+
 
 ../imagens/capa-livro.png
 
