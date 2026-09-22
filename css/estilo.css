@@ -1,0 +1,146 @@
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+#cabecalho {
+  background-color: #2e5339;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.card-livro {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.card-livro img {
+  width: 40%;
+  max-width: 200px;
+}
+
+#btn-adicionar {
+  background-color: #b08942;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#btn-adicionar:hover {
+  background-color: #8f6d2f;
+}
+
+.destaques {
+  margin: 20px;
+}
+
+.lista-destaques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.destaque {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#destaque-1 {
+  background-color: #d7c9a0;
+}
+
+.formatos {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#contato {
+  margin: 20px;
+}
+
+#form-contato label {
+  display: block;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #2e5339;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .card-livro {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .lista-destaques {
+    grid-template-columns: 1fr;
+  }
+}

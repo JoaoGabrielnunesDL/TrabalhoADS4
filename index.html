@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O Rei de Amarelo - Livraria Página Viva</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header id="cabecalho">
+    <h1>Livraria Página Viva</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <p>Carrinho: <span id="contador">0</span></p>
+  </header>
+
+  <main id="topo">
+
+    <article id="catalogo" class="card-livro">
+      <img
+        src="imagens/capa-livro.png"
+        alt="Capa do livro O Rei de Amarelo, em tons escuros com detalhes dourados"
+      >
+
+      <div>
+        <h2>O Rei de Amarelo</h2>
+        <p>Autor: Robert W. Chambers</p>
+        <p>Preço: R$ 39,90</p>
+
+        <p>
+          Publicada originalmente em 1895, esta coletânea de contos é
+          considerada uma das obras fundadoras do terror sobrenatural
+          norte-americano. Várias histórias giram em torno de uma peça de
+          teatro fictícia, também chamada "O Rei de Amarelo", cuja leitura
+          leva quem a lê à loucura.
+        </p>
+        <p>
+          A obra influenciou autores como H. P. Lovecraft e, décadas
+          depois, inspirou elementos da série "True Detective".
+        </p>
+        <p>
+          Edição em português, com tradução e notas explicativas para o
+          leitor brasileiro.
+        </p>
+
+        <button id="btn-adicionar" type="button">Adicionar ao carrinho</button>
+        <ul id="carrinho"></ul>
+      </div>
+    </article>
+
+    <section class="destaques">
+      <h2>Destaques</h2>
+      <ul class="lista-destaques">
+        <li class="destaque" id="destaque-1">Capa dura</li>
+        <li class="destaque">Frete grátis</li>
+        <li class="destaque">Entrega em 24h</li>
+        <li class="destaque">Posfácio exclusivo</li>
+        <li class="destaque">Papel de qualidade</li>
+      </ul>
+    </section>
+
+    <section class="formatos">
+      <h2>Formatos disponíveis</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Formato</th>
+            <th>Preço</th>
+            <th>Prazo de entrega</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Físico</td>
+            <td>R$ 49,90</td>
+            <td>3 a 5 dias úteis</td>
+          </tr>
+          <tr>
+            <td>E-book</td>
+            <td>R$ 24,90</td>
+            <td>Imediato</td>
+          </tr>
+          <tr>
+            <td>Audiobook</td>
+            <td>R$ 34,90</td>
+            <td>Imediato</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contato">
+      <h2>Fale com a gente</h2>
+      <p>Dúvidas sobre o pedido? Preencha o formulário abaixo.</p>
+
+      <form id="form-contato">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="email">E-mail para contato</label>
+        <input type="email" id="email" name="email"><br>
+
+        <p>Preferência de contato:</p>
+        <label for="pref-email">
+          <input type="radio" id="pref-email" name="preferencia" value="email" checked> E-mail
+        </label>
+        <label for="pref-telefone">
+          <input type="radio" id="pref-telefone" name="preferencia" value="telefone"> Telefone
+        </label>
+        <br>
+
+        <label for="senha">Crie uma senha para acompanhar seu pedido</label>
+        <input type="password" id="senha" name="senha"><br>
+
+        <label for="novidades">
+          <input type="checkbox" id="novidades" name="novidades">
+          Aceito receber novidades por e-mail
+        </label>
+        <br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Livraria Página Viva</p>
+    <p>contato@paginaviva.com.br</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <!--
+    Justificativa dos elementos semânticos usados:
+
+    header - usei header em vez de div porque é o cabeçalho da página
+    com o nome da loja e o menu Uma div não deixaria claro isso
+
+    nav - usei nav porque esse bloco de links é a navegação principal do
+    site Ajuda inclusive leitores de tela a identificar o menu
+
+    main - usei main para marcar o conteúdo principal da página (o livro
+    os destaques os formatos e o contato) separado do cabeçalho e do
+    rodapé
+
+    article/section - usei article no card do livro porque ele faz
+    sentido sozinho como um produto Já section foi usada nos blocos de
+    destaques formatos e contato que são partes da página mas não
+    fariam sentido fora dela.
+
+    footer - usei footer para marcar claramente o rodapé com o nome da
+    loja e o email de contato
+  -->
+
+</body>
+</html>
